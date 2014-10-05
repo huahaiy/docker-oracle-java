@@ -28,7 +28,7 @@ RUN \
   \
   \
   echo "===> install CA certificates"  && \
-  apt-get install ca-certificates && \ 
+  apt-get install -y ca-certificates && \ 
   \
   \
   echo "===> clean up..."  && \
