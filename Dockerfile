@@ -5,7 +5,7 @@
 #
 
 # base image from docker hub
-FROM debian:latest
+FROM huahaiy/debian
 
 MAINTAINER Huahai Yang <hyang@juji.io>
 
@@ -25,10 +25,6 @@ RUN \
   echo debconf shared/accepted-oracle-license-v1-1 seen true | \
     debconf-set-selections  && \
   apt-get install -y --force-yes oracle-java8-installer oracle-java8-set-default  && \
-  \
-  \
-  echo "===> install CA certificates"  && \
-  apt-get install -y ca-certificates && \ 
   \
   \
   echo "===> clean up..."  && \
