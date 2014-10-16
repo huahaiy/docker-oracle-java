@@ -4,7 +4,6 @@
 # Version     0.1
 #
 
-# base image from docker hub
 FROM huahaiy/debian
 
 MAINTAINER Huahai Yang <hyang@juji.io>
