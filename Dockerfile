@@ -6,7 +6,7 @@
 
 FROM huahaiy/debian
 
-MAINTAINER Huahai Yang <hyang@juji.io>
+MAINTAINER Huahai Yang <hyang@juji-inc.com>
 
 RUN \
   echo "===> add webupd8 repository..."  && \ 
