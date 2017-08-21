@@ -1,7 +1,7 @@
 #
 # The latest stable Oracle Java for the latest Debian Stable 
 #
-# Version     0.1
+# Version     0.2
 #
 
 FROM huahaiy/debian
@@ -10,9 +10,9 @@ MAINTAINER Huahai Yang <hyang@juji-inc.com>
 
 RUN \
   echo "===> add webupd8 repository..."  && \ 
-  echo "deb http://ppa.launchpad.net/webupd8team/java/ubuntu trusty main" | tee \ 
+  echo "deb http://ppa.launchpad.net/webupd8team/java/ubuntu xenial main" | tee \ 
     /etc/apt/sources.list.d/webupd8team-java.list  && \ 
-  echo "deb-src http://ppa.launchpad.net/webupd8team/java/ubuntu trusty main" | tee -a \ 
+  echo "deb-src http://ppa.launchpad.net/webupd8team/java/ubuntu xenial main" | tee -a \ 
     /etc/apt/sources.list.d/webupd8team-java.list  && \ 
   apt-key adv --keyserver keyserver.ubuntu.com --recv-keys EEA14886  && \
   apt-get update  && \
