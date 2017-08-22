@@ -9,12 +9,6 @@ FROM huahaiy/debian
 MAINTAINER Huahai Yang <hyang@juji-inc.com>
 
 RUN \
-  #echo "===> add webupd8 repository..."  && \ 
-  #echo "deb http://ppa.launchpad.net/webupd8team/java/ubuntu xenial main" | tee \ 
-    #/etc/apt/sources.list.d/webupd8team-java.list  && \ 
-  #echo "deb-src http://ppa.launchpad.net/webupd8team/java/ubuntu xenial main" | tee -a \ 
-    #/etc/apt/sources.list.d/webupd8team-java.list  && \ 
-  #apt-key adv --keyserver keyserver.ubuntu.com --recv-keys EEA14886  && \
   apt-get update  && \
   apt-get install -y --force-yes software-properties-common && \
   add-apt-repository "deb http://ppa.launchpad.net/webupd8team/java/ubuntu xenial main" && \
