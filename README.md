@@ -1,5 +1,5 @@
 docker-oracle-java
 ==================
 
-Docker image of the latest Oracle JDK built on the latest Debian Stable. 
+Docker image of Oracle JDK 8 built on Debian. 
 
