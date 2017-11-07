@@ -24,5 +24,8 @@ RUN \
   \
   \
   echo "===> clean up..."  && \
+  apt-get -y --force-yes --purge remove software-properties-common python-3.5&& \
+  apt-get -y --force-yes --purge autoremove && \
   apt-get clean && \
+  rm -rf /var/cache/oracle-jdk8-installer  && \
   rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
